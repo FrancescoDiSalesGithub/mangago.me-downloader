@@ -11,6 +11,8 @@ echo "manga trying to download: "$manga_name
 echo "manga chapter downloading: "$manga_chapter
 echo "manga pages to download: "$manga_pages
 
+curl -v -o $manga_name_0.html -k -A 'Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0' https://www.mangago.me/read-manga/$1/an/$2-chapter-$3.html
+
 for i in {2..4}
 do
 
